@@ -23,7 +23,7 @@ This is a fifth practice of mine Frontend studies, a personal challenge to impro
 ### Links
 
 - Code URL: [GitHub](https://github.com/Akherox/tiny-portfolio)
-<!-- - Live Site URL: [GitHub Pages](https://akherox.github.io/demon-slayer-slider/) -->
+- Live Site URL: [GitHub Pages](https://akherox.github.io/pokedex-complex/)
 
 ## My process
 

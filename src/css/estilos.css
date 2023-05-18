@@ -2,11 +2,11 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background: url(/src/assets/bg-day.png) center center no-repeat fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(../assets/bg-day.png) center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body.modo-escuro{
@@ -172,11 +172,11 @@ padding-top: 5px;
 }
 
 .modo-escuro {
-    background: url(/src/assets/bg-night.jpeg) center center no-repeat fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(../assets/bg-night.jpeg) center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: #ffffff;
 }
 
