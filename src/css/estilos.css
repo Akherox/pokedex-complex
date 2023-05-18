@@ -2,14 +2,18 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(151, 53, 155, 1) 19%, rgba(177, 47, 122, 1) 38%, rgba(253, 29, 29, 1) 64%, rgba(252, 176, 69, 1) 100%);
+    background: url(/src/assets/bg-day.png) center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/*class="modo-escuro"*/
-/*<button id="botao-alterar-tema">
-			<img src="./src/imagens/sun.png" alt="imagem do sol" class="imagem-botao" />
-		</button>*/
+body.modo-escuro{
+    background-color:  #212121;
+    color: #f5f5f5;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -40,66 +44,73 @@ main {
     padding: 25px;
 }
 
-main .listagem-pokemon {
+.listagem-pokemon {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
-main .cartao-pokemon {
+.cartao-pokemon {
     background: rgb(215,240,255);
-background: linear-gradient(0deg, rgba(215,240,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgb(116, 198, 250) 0%, rgba(255,255,255,1) 100%);
     width: 200px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    border-radius: 20px;
-    transition: 0.2s ease-in-out;
-
-}
-
-main .cartao-pokemon:hover {
-    background: rgb(19,19,19);
-background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(32,32,32,1) 100%);
-    color: #ffffff;
-}
-
-main .cartao-pokemon:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease-in-out;
-}
-
-main .cartao-pokemon .informacoes {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #333333;
+    filter: drop-shadow(4px 4px 0px rgb(27, 27, 27));
     border-radius: 10px;
+    border: 3px solid rgb(149, 149, 149);
+    transition: 0.2s ease-in-out;
+
 }
 
-main .cartao-pokemon .informacoes span {
+.cartao-pokemon:hover {
+  border: 3px solid #D62929;
+  filter: drop-shadow(4px 4px 0px #D62929);
+  box-shadow: 0px 0px 50px  rgb(237, 85, 100, 0.4);
+}
+
+.cartao-pokemon .informacoes {
+    display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.cartao-pokemon .informacoes span {
     text-transform: uppercase;
     padding: 5px;
     font-size: 17px;
 }
 
-main .cartao-pokemon .gif {
-    width: 60px;
-    height: 60px;
+.cartao-pokemon .gifpai {
+padding-top: 5px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 120px;
+  margin: auto;
 }
 
-main .cartao-pokemon .tipos {
+.cartao-pokemon .gif {
+    filter: drop-shadow(0px 0px 10px rgb(138, 138, 138));
+}
+
+.cartao-pokemon .tipos {
     display: flex;
     gap: 15px;
-
 }
 
-main .cartao-pokemon .tipo {
+.cartao-pokemon .tipo {
     padding: 7px;
-    border-radius: 10px;
-
+    border-radius: 20px;
+    color: #ffffff;
 }
 
 .grama {
@@ -152,7 +163,7 @@ main .cartao-pokemon .tipo {
     background: linear-gradient(90deg, rgba(91, 42, 3, 1) 0%, rgba(161, 120, 15, 1) 100%);
 }
 
-main .descricao {
+.descricao {
     max-height: 80px;
     overflow-y: scroll;
     font-size: 15px;
@@ -161,27 +172,70 @@ main .descricao {
 }
 
 .modo-escuro {
-    background: rgb(4, 0, 70);
-    background: linear-gradient(90deg, rgba(4, 0, 70, 1) 7%, rgba(0, 80, 69, 1) 54%, rgba(43, 98, 36, 1) 100%);
+    background: url(/src/assets/bg-night.jpeg) center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     color: #ffffff;
-    justify-content: space-between;
 }
 
 .modo-escuro .cartao-pokemon {
-    background: rgb(19,19,19);
-background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(32,32,32,1) 100%);
+    background: rgb(215, 251, 255);
+    background: linear-gradient(0deg, rgb(29, 29, 116) 0%, rgb(215, 251, 255) 100%);
     color: #ffffff;
+    filter: drop-shadow(4px 4px 0px rgb(119, 119, 119));
+    border: 3px solid rgb(185, 185, 185);
 }
 
 .modo-escuro .cartao-pokemon .informacoes {
     display: flex;
     justify-content: space-between;
-    border: 2px solid #333333;
-    border-radius: 10px;
+    color: #000000;
 }
 
 .modo-escuro .cartao-pokemon:hover {
-    background: rgb(205, 205, 205);
-    background: linear-gradient(0deg, rgba(205, 205, 205, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    color: #333333;
+    border: 3px solid #52c0ff;
+  filter: drop-shadow(4px 4px 0px #52c0ff);
+  box-shadow: 0px 0px 50px  rgba(102, 191, 255, 0.5);
+}
+
+.modo-escuro .grama {
+    background: rgb(8, 115, 4);
+}
+
+.modo-escuro .veneno {
+    background: rgb(137, 6, 228);
+}
+
+.modo-escuro .fogo {
+    background: rgb(238, 47, 3);
+}
+
+.modo-escuro .agua {
+    background: rgb(7, 7, 153);
+}
+
+.modo-escuro .inseto {
+    background: rgb(123, 190, 0);
+}
+
+.modo-escuro .voador {
+    background: rgb(0, 153, 190);
+}
+
+.modo-escuro .eletrico {
+    background: rgb(204, 183, 27);
+}
+
+.modo-escuro .psico {
+    background: rgb(204, 27, 138);
+}
+
+.modo-escuro .normal {
+    background: rgb(140, 122, 85);
+}
+
+.modo-escuro .terra {
+    background: rgb(91, 42, 3);
 }
