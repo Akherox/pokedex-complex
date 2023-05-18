@@ -22,8 +22,13 @@ This is a fifth practice of mine Frontend studies, a personal challenge to impro
 
 ### Links
 
+<<<<<<< HEAD
 - Code URL: [GitHub](https://github.com/Akherox/tiny-portfolio)
 - Live Site URL: [GitHub Pages](https://akherox.github.io/pokedex-complex/)
+=======
+- Code URL: [GitHub](https://github.com/Akherox/pokedex-complex)
+<!-- - Live Site URL: [GitHub Pages](https://akherox.github.io/demon-slayer-slider/) -->
+>>>>>>> c2a803d48ba7476845814d0eaeeaaed08854f6a0
 
 ## My process
 
